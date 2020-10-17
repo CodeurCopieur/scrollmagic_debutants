@@ -3,13 +3,14 @@
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
-#projet-01 {
+#projet-01, .projet {
   opacity: 0;
   //transform: translateY(100px);
   transition: all 1s ease-out;
 }
 
-#projet-01.fade-in {
+#projet-01.fade-in, .projet.fade-in {
   opacity: 1;
   //transform: translateY(0);
 }
+

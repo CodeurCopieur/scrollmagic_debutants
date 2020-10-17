@@ -8339,11 +8339,11 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-#projet-01 {
+#projet-01, .projet {
   opacity: 0;
   -webkit-transition: all 1s ease-out;
   -o-transition: all 1s ease-out;
   transition: all 1s ease-out; }
 
-#projet-01.fade-in {
+#projet-01.fade-in, .projet.fade-in {
   opacity: 1; }
