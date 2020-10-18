@@ -8351,3 +8351,22 @@ a.text-dark:hover, a.text-dark:focus {
 #main {
   position: relative;
   background-color: #fff; }
+
+#bcg-parallax {
+  overflow: hidden;
+  position: relative;
+  background-color: #fff; }
+
+.bcg {
+  background: url("https://i.picsum.photos/id/1002/4312/2868.jpg?hmac=5LlLE-NY9oMnmIQp7ms6IfdvSUQOzP_O3DPMWmyNxwo") no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 150%;
+  top: 0;
+  z-index: 1;
+  opacity: 1; }
+
+.content-wrapper {
+  position: relative;
+  z-index: 2; }
