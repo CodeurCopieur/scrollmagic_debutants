@@ -3,6 +3,26 @@ $(document).ready(function () {
   //Init ScrollMagic
   var controller = new ScrollMagic.Controller();
   
+   //pin the into
+   var pinIntroScene = new ScrollMagic.Scene({
+    triggerElement: '#intro',
+    triggerHook: 0,
+    duration: '30%'
+  })
+  .setPin('#intro', {pushFollowers: false})
+  .addTo(controller);
+
+
+  //pin the into
+  var pinIntroScene2 = new ScrollMagic.Scene({
+    triggerElement: '#projet-01',
+    triggerHook: 0.4
+  })
+  .setPin('#intro', {pushFollowers: false})
+  .addTo(controller);
+
+
+
   //build a scene
   var ourScene = new ScrollMagic.Scene({
     triggerElement: '#projet-01 .div-rond',
@@ -12,6 +32,7 @@ $(document).ready(function () {
     triggerHook: .9,
     reverse: false
   })
+
   //ajouter la class 'fade-in' sur #projet-01
   .setClassToggle('#projet-01', 'fade-in')
   .addIndicators({
@@ -30,7 +51,7 @@ $(document).ready(function () {
     var ourScene = new ScrollMagic.Scene({
       triggerElement: this.children[0],
       //le point final qui va arrêter l'animation
-      duration: '100%',
+      duration: '60%',
       //le point départ qui va declencher l'animation
       triggerHook: .5
     })

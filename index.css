@@ -8347,3 +8347,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 #projet-01.fade-in, .projet.fade-in {
   opacity: 1; }
+
+#main {
+  position: relative;
+  background-color: #fff; }
